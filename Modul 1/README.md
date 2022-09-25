@@ -8,11 +8,9 @@
 
 # Pengenalan
 Sub-materi
-- [Materi](#materi)
-- [Pengenalan](#pengenalan)
-    - [1. Pengertian Linux](#1-pengertian-linux)
-    - [2. Distro Linux](#2-distro-linux)
-
+1. [Pengertian Linux](#1-pengertian-linux)
+2. [Distro Linux](#2-distro-linux)
+3. [Perbedaan Linux, MAC, dan Windows](#3-perbedaan-linux-mac-dan-windows)
 
 ### 1. Pengertian Linux
 **Linux** adalah nama yang diberikan kepada sistem operasi bertipe **Unix**. Linux merupakan salah satu contoh hasil pengembangan perangkat lunak *open source*. Seperti perangkat *open source* lain pada umumnya, kode sumber Linux dapat dimodifikasi, digunakan dan didistribusikan kembali secara bebas oleh siapa saja.
