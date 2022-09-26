@@ -1,19 +1,16 @@
 # Materi
 1. [Pengenalan](#pengenalan)
-2. [Instalasi](#instalasi)
-3. [Konsep](#konsep)
-4. [CLI](#command-line-interface)
-5. [Tugas Mandiri](#tugas-mandiri)
+2. [Konsep](#konsep)
+3. [CLI](#command-line-interface)
+4. [Tugas Mandiri](#tugas-mandiri)
 
 
 # Pengenalan
 Sub-materi
-- [Materi](#materi)
-- [Pengenalan](#pengenalan)
-    - [1. Pengertian Linux](#1-pengertian-linux)
-    - [2. Sejarah Linux](#2-sejarah-linux)
-    - [3. Distro Linux](#3-distro-linux)
-    - [4. Perbedaan Linux, MAC, dan Windows](#4-perbedaan-linux-mac-dan-windows)
+1. [Pengertian Linux](#1-pengertian-linux)
+2. [Sejarah Linux](#2-sejarah-linux)
+3. [Distro Linux](#3-distro-linux)
+4. [Perbedaan Linux, MAC, dan Windows](#4-perbedaan-linux-mac-dan-windows)
 
 ### 1. Pengertian Linux
 **Linux** adalah nama yang diberikan kepada sistem operasi bertipe **Unix**. Linux merupakan salah satu contoh hasil pengembangan perangkat lunak *open source*. Seperti perangkat *open source* lain pada umumnya, kode sumber Linux dapat dimodifikasi, digunakan dan didistribusikan kembali secara bebas oleh siapa saja.
