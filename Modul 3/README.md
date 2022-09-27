@@ -10,5 +10,6 @@ Deploy atau deployment adalah kegiatan yang merupakan untuk mengembangkan aplika
 Salah satu yang tidak boleh disepelekan adalah saat menyusun kode (coding) untuk dimasukan ke server dan menyetel atau setup server tersebut agar dapat menghasilkan suatu halamaan web atau aplikasi.
 ![Web-schema](img/DNS.png)
 
+
 ## Link Materi Praktik
 ![Vagrant Deploy](https://github.com/danielcristho/vagrant-deploy-LEMP)
