@@ -72,7 +72,11 @@ Protokol HTTP dan HTTPS digunakan web server untuk dapat berkomunikasi dengan kl
 
 ## Referensi
 https://www.dicoding.com/blog/apa-itu-web-server-dan-fungsinya/
+
 https://www.geeksforgeeks.org/working-of-domain-name-system-dns-server/
+
 https://rifqimulyawan.com/blog/pengertian-deploy/
+
 https://codepolitan.com/blog/tutorial-instalasi-lemp-stack-nginx-mysql-php-di-ubuntu-1604-59f04379be507
+
 https://www.niagahoster.co.id/blog/laravel-adalah/
