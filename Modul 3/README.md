@@ -13,7 +13,7 @@
 
 Salah satu yang tidak boleh disepelekan adalah saat menyusun kode (coding) untuk dimasukan ke server dan menyetel atau setup server tersebut agar dapat menghasilkan suatu halamaan web atau aplikasi.
 
-![Deployment](img/deploy.png)
+![Deployment](img/Deploy-Process.png)
 
 ## LEMP Stack
 **LEMP Stack** adalah seperangkat aplikasi yang digunakan secara bersamaan untuk menjalankan web server. LEMP merupakan singkatan (akronim) dari Linux + Nginx + MySQL + PHP.
@@ -57,7 +57,7 @@ Protokol HTTP dan HTTPS digunakan web server untuk dapat berkomunikasi dengan kl
 ## DNS (Domain Name Service)
 **DNS** adalah sebuah sistem yang mengubah URL website ke dalam bentuk IP Address. Tanpa DNS, Anda harus mengetikkan IP Address secara lengkap ketika ingin mengunjungi sebuah website.
 
-![DNS-Scheme](img/132827882-240196d3-10b9-46c7-8642-822c583a23b6.png)
+![DNS-Scheme](img/DNS-Scheme.png)
 
 
  - Root-Level Domain merupakan bagian tertinggi dari hirarki DNS. Biasanya ia berwujud tanda titik (.) di bagian paling   belakang sebuah URL.
