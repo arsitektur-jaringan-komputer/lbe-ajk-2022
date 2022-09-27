@@ -19,7 +19,7 @@ Salah satu yang tidak boleh disepelekan adalah saat menyusun kode (coding) untuk
 **LEMP Stack** adalah seperangkat aplikasi yang digunakan secara bersamaan untuk menjalankan web server. LEMP merupakan singkatan (akronim) dari Linux + Nginx + MySQL + PHP.
 
 - Linux
-- 
+
   Linux berperan sebagai sistem operasi, tempat dimana kita menginstal dan menjalankan Nginx, MySQL dan PHP. Linux sendiri merupakan sistem operasi yang populer digunakan sebagai server. 
 
 - Nginx
