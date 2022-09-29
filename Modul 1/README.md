@@ -28,7 +28,7 @@ Linux juga mendominasi di pasar pensel melalui sistem operasi Android buatan Goo
 ![Ubuntu](img/ubuntu-150x150.png "Ubuntu")
 
 Ubuntu merupakan suatu sistem operasi yang berbasikan pada Debian yang dikembangkan pada tahun 2004 oleh suatu perusahaan dari Afrika Selatan yang bernama _Canonical ltd_.  Asal penamaan dari Ubuntu ini juga berasal dari bahasa Afrika Selatan yang berarti kemanusiaan. Dengan sifatnya sebagai OS open source, Ubuntu sengaja diprioritaskan untuk kepentingan umum atau server.
-Ubuntu sendiri memiliki kelebihan dan kekurangan antara lain : <br>
+Ubuntu sendiri memiliki kelebihan dan kekurangan antara lain : 
       | Kelebihan  |  Kekurangan |
       |------------|-------------|
       | Menyediakan OS gratis | Tampilan menuntut adaptasi |
@@ -41,9 +41,9 @@ Ubuntu sendiri memiliki kelebihan dan kekurangan antara lain : <br>
 
 ![Debian](img/2000px-Ardebian_logo.svg-150x150.png "Debian")
 
-Debian pertama kali diperkenalkan pada tahun 1993 oleh Ian Murdock. Nama Debian berasal dari kombinasi nama Ian dengan mantan-kekasihnya Debra Lynn: Deb dan Ian. Salah satu alasan mengapa Debian ini termasuk Distro Linux yang paling banyak digunakan adalah karena security-nya yang bagus.Debian dapat digunakan oleh beragam kebutuhan seperti desktop dan juga server yang memfokuskan kestabilan serta keamanan. Debian juga memiliki kelebihan dan kekurangan antaralain : <br>
+Debian pertama kali diperkenalkan pada tahun 1993 oleh Ian Murdock. Nama Debian berasal dari kombinasi nama Ian dengan mantan-kekasihnya Debra Lynn: Deb dan Ian. Salah satu alasan mengapa Debian ini termasuk Distro Linux yang paling banyak digunakan adalah karena security-nya yang bagus.Debian dapat digunakan oleh beragam kebutuhan seperti desktop dan juga server yang memfokuskan kestabilan serta keamanan. Debian juga memiliki kelebihan dan kekurangan antaralain :
       | Kelebihan  |  Kekurangan |
-      |------------|-------------|
+      |:-----------|:------------|
       | Lebih aman dibandingkan sistem operasi lain, jarang sekali ditemui virus | Harus membiasakan dengan software-software yang kompatibel dengan linux |
       | Perangkat lunak gratis | Memakan repository sebesar 40-60 GB |
       | Selalu update pembaruan sistem |  Saat terjadi masalah error pada linux sulit mengatasinya |
