@@ -28,16 +28,27 @@ Linux juga mendominasi di pasar pensel melalui sistem operasi Android buatan Goo
 ![Ubuntu](img/ubuntu-150x150.png "Ubuntu")
 
 Ubuntu merupakan suatu sistem operasi yang berbasikan pada Debian yang dikembangkan pada tahun 2004 oleh suatu perusahaan dari Afrika Selatan yang bernama _Canonical ltd_.  Asal penamaan dari Ubuntu ini juga berasal dari bahasa Afrika Selatan yang berarti kemanusiaan. Dengan sifatnya sebagai OS open source, Ubuntu sengaja diprioritaskan untuk kepentingan umum atau server.
-Ubuntu sendiri saat ini adalah sistem operasi yang populer digunakan karena memiliki kelebihan antara lain : <br>
-      1. Menyediakan OS gratis               4. Mendukung Banyak Perangkat dengan Baik <br>
-      2. Ramah Pemula                        5. Memiliki Banyak Jenis Sesuai Kebutuhan <br>
-      3. Mendukung berbagai Aplikasi
+Ubuntu sendiri memiliki kelebihan dan kekurangan antara lain : <br>
+      | Kelebihan  |  Kekurangan |
+      |------------|-------------|
+      | Menyediakan OS gratis| Tampilan menuntut adaptasi|
+      | Ramah Pemula| Aplikasi relatif sedikit apabila dibandingkan dengan sistem operasi lain|
+      | Mendukung berbagai Aplikasi|  Kurang cocok untuk gaming|
+      | Mendukung Banyak Perangkat dengan Baik|                |
+      | Memiliki Banyak Jenis Sesuai Kebutuhan|                |
 
 **2. Debian**
 
 ![Debian](img/2000px-Ardebian_logo.svg-150x150.png "Debian")
 
-Debian pertama kali diperkenalkan pada tahun 1993 oleh Ian Murdock. Nama Debian berasal dari kombinasi nama Ian dengan mantan-kekasihnya Debra Lynn: Deb dan Ian. Salah satu alasan mengapa Debian ini termasuk Distro Linux yang paling banyak digunakan adalah karena security-nya yang bagus.
+Debian pertama kali diperkenalkan pada tahun 1993 oleh Ian Murdock. Nama Debian berasal dari kombinasi nama Ian dengan mantan-kekasihnya Debra Lynn: Deb dan Ian. Salah satu alasan mengapa Debian ini termasuk Distro Linux yang paling banyak digunakan adalah karena security-nya yang bagus.Debian dapat digunakan oleh beragam kebutuhan seperti desktop dan juga server yang memfokuskan kestabilan serta keamanan. Debian juga memiliki kelebihan dan kekurangan antaralain : 
+      | Kelebihan  |  Kekurangan |
+      |------------|-------------|
+      | Lebih aman dibandingkan sistem operasi lain, jarang sekali ditemui virus| Harus membiasakan dengan software-software yang kompatibel dengan linux|
+      | Perangkat lunak gratis| Memakan repository sebesar 40-60 GB|
+      | Selalu update pembaruan sistem|  Saat terjadi masalah error pada linux sulit mengatasinya|
+      | Mendukung berbagai jenis komputer yang ada pada saat ini, dan tidak ribet dalam instalasi driver|                |
+      | Sistem tidak akan mudah berhenti atau mengalami hang saat menjalankan program secara rutin dalam kurun waktu yang lama sekalipun|                |
 
 **3. Mint**
 
