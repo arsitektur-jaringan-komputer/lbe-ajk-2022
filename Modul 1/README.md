@@ -28,9 +28,9 @@ Linux juga mendominasi di pasar pensel melalui sistem operasi Android buatan Goo
 ![Ubuntu](img/ubuntu-150x150.png "Ubuntu")
 
 Ubuntu merupakan suatu sistem operasi yang berbasikan pada Debian yang dikembangkan pada tahun 2004 oleh suatu perusahaan dari Afrika Selatan yang bernama _Canonical ltd_.  Asal penamaan dari Ubuntu ini juga berasal dari bahasa Afrika Selatan yang berarti kemanusiaan. Dengan sifatnya sebagai OS open source, Ubuntu sengaja diprioritaskan untuk kepentingan umum atau server.
-Ubuntu sendiri saat ini adalah sistem operasi yang populer digunakan karena memiliki kelebihan antara lain :
-      1. Menyediakan OS gratis               4. Mendukung Banyak Perangkat dengan Baik
-      2. Ramah Pemula                        5. Memiliki Banyak Jenis Sesuai Kebutuhan
+Ubuntu sendiri saat ini adalah sistem operasi yang populer digunakan karena memiliki kelebihan antara lain : <br>
+      1. Menyediakan OS gratis               4. Mendukung Banyak Perangkat dengan Baik <br>
+      2. Ramah Pemula                        5. Memiliki Banyak Jenis Sesuai Kebutuhan <br>
       3. Mendukung berbagai Aplikasi
 
 **2. Debian**
