@@ -17,46 +17,50 @@ Sub-materi
 
 ### 2. Sejarah Linux
 **Linux** dikembangkan pertama kali oleh **Linux Torvalds** pada tahub 1991, Linux dirilis di bawah Lisensi Publik Umum GNU versi 2. Linux aslinya dikembangkan untuk komputer pribadi berarsitektur Intel x86, tetapi seiring waktu Linux telah diportasi ke berbagai arsitektur, lebih banyak daripada sistem operasi lainnya.
-Linux juga mendominasi di pasar pensel melalui sistem operasi Android buatan Google, yang digunakan sekitar 72.7 persen secara global per 2021
+Linux juga mendominasi di pasar pensel melalui sistem operasi Android buatan Google, yang digunakan sekitar 72.7 persen secara global per 2021.
+   Linux dulunya adalah proyek hobi yang dikerjakan oleh Linus Torvalds yang memperoleh inspirasi dari Minix. Minix adalah sistem UNIX kecil yang dikembangkan oleh Andrew S. Tanenbaum, seorang professor yang menggeluti penelitian masalah OS dari Vrije Universiteit, Belanda.Linux versi 0.01 dikerjakan sekitar bulan Agustus 1991. Kemudian pada bulan Oktober 1991 tanggal 5, Linus mengumumkan versi resmi Linux, yaitu 0.02 yang hanya dapat menjalankan bash (GNU Bourne Again Shell) dan gcc (GNU C Compiler). Sekarang Linux adalah sistem UNIX yang lengkap, bisa digunakan untuk jaringan (networking), pengembangan software, dan bahkan untuk keperluan sehari-hari.
 
 ### 3. Distro Linux
 **Distro Linux** (singkatan dari **distribusi Linux**) adalah sebutan untuk sistem operasi komputer dan aplikasinya, merupakan keluarga yang menggunakan kernel Linux.
 
 **1. Ubuntu**
 
-![Ubuntu](img/ubuntu-150x150.png "Ubuntu")
+                                                         ![Ubuntu](img/ubuntu-150x150.png "Ubuntu")
 
 Ubuntu merupakan suatu sistem operasi yang berbasikan pada Debian yang dikembangkan pada tahun 2004 oleh suatu perusahaan dari Afrika Selatan yang bernama _Canonical ltd_.  Asal penamaan dari Ubuntu ini juga berasal dari bahasa Afrika Selatan yang berarti kemanusiaan. Dengan sifatnya sebagai OS open source, Ubuntu sengaja diprioritaskan untuk kepentingan umum atau server.
-Ubuntu sendiri saat ini adalah sistem operasi yang populer digunakan untuk komputasi awan atau cloud.
+Ubuntu sendiri saat ini adalah sistem operasi yang populer digunakan karena memiliki kelebihan antara lain :
+      1. Menyediakan OS gratis               4. Mendukung Banyak Perangkat dengan Baik
+      2. Ramah Pemula                        5. Memiliki Banyak Jenis Sesuai Kebutuhan
+      3. Mendukung berbagai Aplikasi
 
 **2. Debian**
 
-![Debian](img/2000px-Ardebian_logo.svg-150x150.png "Debian")
+                                                  ![Debian](img/2000px-Ardebian_logo.svg-150x150.png "Debian")
 
 Debian pertama kali diperkenalkan pada tahun 1993 oleh Ian Murdock. Nama Debian berasal dari kombinasi nama Ian dengan mantan-kekasihnya Debra Lynn: Deb dan Ian. Salah satu alasan mengapa Debian ini termasuk Distro Linux yang paling banyak digunakan adalah karena security-nya yang bagus.
 
 **3. Mint**
 
-![Mint](img/mint-150x150.png "Mint")
+                                                                ![Mint](img/mint-150x150.png "Mint")
 
 Jika sebelumnya kita mengetahui bahwa Distro Linux yang bernama Ubuntu dibuat dengan berbasiskan pada Debian, maka kali ini ada Distro yang berbasiskan pada Debian dan Ubuntu. Namanya adalah Mint atau yang biasa disebut Linux Mint. 
 Linux Mint sendiri sangat user-friendly karena tampilannya yang nyaman digunakan. Sangat mudah digunakan bahkan untuk pemula.
 
 **4. Red Hat**
 
-![Red Hat](img/RedHat-150x150.png "Red Hat")
+                                                            ![Red Hat](img/RedHat-150x150.png "Red Hat")
 
 Red Hat pertama kali dikenalkan pada tahun 1993 oleh salah satu perusahaan bernama Red Hat Inc dan seringkali juga disebut Red Hat Linux. Kemudian pada tahub 2003 diganti menjadi Red Hat Enterprise Linux khusus untuk lingkungan perusahaan. Sistem operasi ini juga yang pertama kali mempopulerkan penggunaan sistem _RPM Package Manager_.
 
 **5. Fedora**
 
-![Fedora](img/fedora-150x150.png "Fedora")
+                                                              ![Fedora](img/fedora-150x150.png "Fedora")
 
 Fedora Merupakan salah satu Distro Linux yang dikembangkan oleh tim **Fedora Project** dan disponsori oleh Red Hat. Bahkan nama Fedora ini diambil dari salah satu Karakter dalam logo Red Hat itu sendiri. Sama halnya dengan Red Hat, sistem operasi Fedora juga menggunakan sistem _RPM Package Manager_.
 
 **6. CentOS**
 
-![CentOS](img/centos-150x150.jpg "CentOS")
+                                                              ![CentOS](img/centos-150x150.jpg "CentOS")
 
 CentOS merupakan singkatan dari _Community Enterprise Operating System_ dan merupakan salah satu contoh Distro Linux yang dikembangkan oleh The CentOS Project. Sistem operasi ini dibuat menggunakan  kode sumber yang berasala dari Red Hat. Oleh karena itu, dalam hal produk CentOs sangatlah mirip dengan Red Hat Enterprise Linux.
 
