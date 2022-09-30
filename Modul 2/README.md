@@ -1,10 +1,10 @@
-# Virtualisai Menggunakan Vargrant
+# Virtualisai Menggunakan Vagrant
 
 ## Contents
 
 - [**Virtualisasi**](#Virtualisasi)
-- [**LEMP**](#lemp)
-- [**Laravel**](#laravel)
+- [**Virtual Machine**](#VirtualMachine)
+- [**vagrant**](#vagrant)
 - [**Web Server**](#web-server)
 - [**DNS**](#dns-domain-name-service)
 
@@ -32,7 +32,7 @@ Satu tempat penyimpanan fisik dapat terlihat menjadi beberapa driver virtual. De
 
 Di dalan jaringan, sebuah router fisik dapat mendukung beberapa, alamat IP untuk membuat router virtual. Sama seperti sebuah switch Ethernet fisik dapat mendukung beberapa alamat MAC (media access control) untuk membuat switch virtual. Sebuah hardware fisik dapat dibagi menjadi beberapa router atau switch virtual untuk mengurangi biaya.
 
-## Virual Machine
+## Virtual Machine
 
 **Virtual Machine** Virtual machine berjalan pada partisi terisolasi yang ada pada komputer host dengan resources seperti CPU, memori, dan sistem operasi tersendiri. Hal ini memungkinkan pengguna untuk menjalankan berbagai aplikasi pada virtual machine dan menggunakannya seperti biasanya pada perangkat tersebut. Alih-alih komputer fisik, Satu atau lebih virtual machine bisa berjalan pada satu perangkat keras.
 
@@ -40,69 +40,94 @@ Di dalan jaringan, sebuah router fisik dapat mendukung beberapa, alamat IP untuk
 
 - Hyper-V
 
-Hyper-V adalah salah satu software virtualisasi yang biasa digunakan pada operasi sistem Windows. Bahkan windows 8, 8.1, dan Windows 10 sudah memiliki fitur ini secara default. Namun tentunya fitur-fitur yang Anda dapatkan dari versi gratis ini sangat terbatas.
+![Hyper-V](./img/hyper-v-150x%20150.png)
 
-![Hyper-V](./img/hyper-v.png)
+**Hyper-V** adalah salah satu software virtualisasi yang biasa digunakan pada sistem operasi Windows. Bahkan windows 8, 8.1, dan Windows 10 sudah memiliki fitur ini secara default. Namun tentunya fitur-fitur yang Anda dapatkan dari versi gratis ini sangat terbatas.
 
-- Nginx
+- Virtual Box
 
-  Nginx adalah aplikasi server open source sebagai server HTTP dan Proxy dengan fokus pada performa dan efisiensi.
+![Virtual-Box](./img/VirtualBox-4.0.jpg)
 
-- MySQL
+**VirtualBox** adalah software virtualisasi open-source yang mendukung semua sistem operasi sesuai dengan kebutuhan Anda.Karena bersifat open-source, Anda bisa mendapatkan software ini dengan sangat mudah. Anda hanya perlu membuka websitenya dan mendownload secara langsung.
 
-  MySQL merupakan database server yang populer digunakan terutama dalam proses pengembangan aplikasi berbasis PHP. Alternatif selain MySQL adalah kalian bisa menggunakan database MariaDB.
+- Qemu
 
-- PHP
+![Qemu](./img/qemu.png)
 
-  PHP adalah bahasa pemrograman atau scripting language yang berjalan pada server side yang digunakan untuk mengembangkan web. Bahasa ini merupakan bahasa pemrograman web yang paling populer di Indonesia sehingga pilihan untuk mempelajari PHP merupakan pilihan yang bagus.
+**Qemu** adalah software virtualisasi yang bisa menjalankan virtual machine pada sistem operasi Linux dan Windows.Berasal dari singkatan Quick Emulator, Qemu bersifat open-source dan bisa digunakan secara gratis. Anda hanya perlu membuka website dan mendownload file untuk memulai.
 
-## Laravel
+## Vagrant
 
-Laravel adalah salah satu framework yang dimiliki PHP dalam proses pengembangan website. Framework sendiri adalah kerangka kerja yang digunakan untuk mengembangkan (develop) aplikasi berbasis desktop atau aplikasi berbasis website. Dengan menggunakan framework proses mengembangkan aplikasi atau website jauh lebih mudah.
+![Vagrant](./img/vagrant-logo.png)
 
-Laravel diluncurkan sejak tahun 2011 dan mengalami pertumbuhan yang cukup eksponensial. Di tahun 2015, Laravel adalah framework yang paling banyak mendapatkan bintang di Github. Sekarang framework ini menjadi salah satu yang populer di dunia, tidak terkecuali di Indonesia.
+**Vagrant** adalah produk perangkat lunak open source untuk membangun dan memelihara lingkungan pengembangan perangkat lunak virtual portabel misalnya, untuk VirtualBox, KVM, Hyper-V,Docker Container, VMware, dan AWS. vagrant mencoba menyederhanakan manajemen konfigurasi perangkat lunak virtualisasi untuk meningkatkan produktivitas pengembangan. Vagrant ditulis dalam bahasa Ruby, tetapi ekosistemnya mendukung pengembangan dalam beberapa bahasa lain.
 
-Laravel memiliki tools yang menjadi andalannya, tools tersebut adalah composer dan artisan. Composer merupakan tool yang di dalamnya terdapat dependencies dan kumpulan library. Seluruh dependencies disimpan menggunakan format file composer.json sehingga dapat ditempatkan di dalam folder utama website. Oleh karena itu composer dikenal dengan dependencies management. Sedangkan Artisan merupakan command line interface yang dimiliki oleh Laravel. Artisan mencakup sekumpulan perintah yang membantu Anda untuk membangun sebuah website atau aplikasi web.
+## Praktik Provisioning dengan Vagrant
 
-## Web Server
+**Instalasi Tools**
 
-**Web server** adalah sebuah software (perangkat lunak) yang memberikan layanan berupa data. Berfungsi untuk menerima permintaan HTTP atau HTTPS dari klien atau kita kenal dengan web browser (Chrome, Firefox). Selanjutnya ia akan mengirimkan respon atas permintaan tersebut kepada client dalam bentuk halaman web.
+Dalam praktik provisioning yang akan dilakukan. Kita perlu menginstal terlebih dahulu tools yang akan kita gunakan yaitu :
 
-Protokol HTTP dan HTTPS digunakan web server untuk dapat berkomunikasi dengan klien. Dengan protokol HTTP dan HTTPS, komunikasi antar server dengan klien dapat saling terhubung serta dapat dimengerti dengan mudah.
+- Vagrant
 
-### Jenis-jenis Web Server
+instalasi bisa melalui link berikut
+https://www.vagrantup.com/
 
-- Nginx
-- Apache
-- IIS
-- Lighttpd
+- Virtual Box
 
-![Web-schema](img/Web-Scheme.png)
+instalasi bisa melalui link berikut
+https://www.virtualbox.org/
 
-## DNS (Domain Name Service)
+### Langkah - langkah
 
-**DNS** adalah sebuah sistem yang mengubah URL website ke dalam bentuk IP Address. Tanpa DNS, Anda harus mengetikkan IP Address secara lengkap ketika ingin mengunjungi sebuah website.
+- Buka cmd
 
-![DNS-Scheme](img/DNS-Scheme.png)
+![Open-cmd](./img/cmd.jpg)
 
-- Root-Level Domain merupakan bagian tertinggi dari hirarki DNS. Biasanya ia berwujud tanda titik (.) di bagian paling belakang sebuah URL.
-- Top-Level Domain adalah ekstensi yang berada di bagian depan root-level domain. contoh pada gambar adalah org.
-- Second-Level Domain ialah nama lain untuk domain itu sendiri. Ia sering digunakan sebagai identitas institusi atau branding. Dalam kasus URL en.wikipedia.org, yang dimaksud SLD adalah wikipedia.
-- Third-Level Domain atau subdomain merupakan bagian dari domain utama yang berdiri sendiri. Apabila domain diibaratkan sebagai rumah, subdomain adalah salah satu ruang khusus di rumah itu sendiri. contoh pada gambar adalah en
-- Hostname atau bisa disebut juga dengan scheme. Ini merupakan bagian yang mengawali sebuah URL. Bagian ini menunjukkan sebuah fungsi dari sebuah website atau halamannya. Contoh paling banyak digunakan, yaitu HTTPS atau Hypertext Transfer Protocol Secure.
+- Cek apakah vagrant sudah terinstall dengan cmd
+  `vagrant -v`
 
-## Link Materi Praktik
+![vagrant-v](./img/vagrant-v.jpg)
 
-![Vagrant Deploy](https://github.com/danielcristho/vagrant-deploy-LEMP)
+- Pilih box yang akan divirtualisasi dengan vagrant klik find box, disini kita akan virtualisasikan ubuntu server
+
+![find-box](./img/find-box.jpg)
+
+disini kita pilih ubuntu untuk box yang akan kita pakai
+![pilih-box](./img/pilih-ubuntu.jpg)
+
+- Inisialisai box yang dipilih pada vagrant melalui cmd `vagrant init ubuntu/trusty64`
+
+![vagrant-int](./img/vagrant-init.jpg)
+
+- Jalankan box tersebut pada vagrant `vagrant up`
+
+![vagrant-up](./img/vagrant-up.jpg)
+
+akan terlihat document pada direktori
+
+![vagrant-up](./img/vagrant-file.jpg)
+
+dan juga terlihat virtual machine baru yang otomatis terbuat
+
+![vagrant-create](./img/virtualbox-create.jpg)
+
+- Cek di cmd virtual machine yang telah dibuat dan cek juga konfigurasinya `vagrant ssh-config`
+
+![vagrant-config](./img/vagrant-config.jpg)
+
+- Masuk virtual machine yang telah dibuat melalui SSH di cmd, mengguanakan data data yang telah kita dapat melalui `ssh-config` `ssh <user>@<ip hostname> -p <port> -i <private-key>`
+
+![vagrant-ssh](./img/masuk-linux.jpg)
+
+maka kita telah berhasil masuk ke dalam os linux yang telah kita buat.
 
 ## Referensi
 
-https://www.dicoding.com/blog/apa-itu-web-server-dan-fungsinya/
+https://www.vagrantup.com/
 
-https://www.geeksforgeeks.org/working-of-domain-name-system-dns-server/
+https://www.virtualbox.org/
 
-https://rifqimulyawan.com/blog/pengertian-deploy/
+https://sis.binus.ac.id/2014/10/11/konsep-dasar-virtualisasi/
 
-https://codepolitan.com/blog/tutorial-instalasi-lemp-stack-nginx-mysql-php-di-ubuntu-1604-59f04379be507
-
-https://www.niagahoster.co.id/blog/laravel-adalah/
+https://barki.uma.ac.id/2021/12/30/virtual-machine-pengertian-jenis-jenis-dan-manfaatnya/
