@@ -5,7 +5,7 @@
 - [**Virtualisasi**](#Virtualisasi)
 - [**Virtual Machine**](#VirtualMachine)
 - [**vagrant**](#vagrant)
-- [**Web Server**](#web-server)
+- [**Langkah - langkah**](#langkahlangkah)
 - [**DNS**](#dns-domain-name-service)
 
 ## Virtualisasi
