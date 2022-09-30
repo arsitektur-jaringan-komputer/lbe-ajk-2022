@@ -10,17 +10,39 @@
 
 ## Virtualisasi
 
-**Virtualisasi** adalah konsep dimana akses ke sebuah hardware seperti server diatur sehingga beberapa operating system (guest operation system) dapat berbagi sebuah hardware. Tujuan dari virtualisasi adalah kinerja tingkat tinggi, ketersediaan, keandalan, ketangkasan, atau untuk membuat dasar keamanan dan manajemen yang terpadu.
+**Virtualisasi** adalah konsep dimana akses ke sebuah hardware seperti server diatur sehingga beberapa operating system dapat berbagi sebuah hardware. Tujuan dari virtualisasi adalah kinerja tingkat tinggi, ketersediaan, Efisiensi, dan untuk membuat dasar keamanan dan manajemen yang terpadu.
 
-![Deployment](img/Deploy-Process.png)
+![Deployment](./img/Virtualisasi.png)
 
-## LEMP Stack
+### Beberapa peralatan komputer yang dapat divirtualisasikan :
 
-**LEMP Stack** adalah seperangkat aplikasi yang digunakan secara bersamaan untuk menjalankan web server. LEMP merupakan singkatan (akronim) dari Linux + Nginx + MySQL + PHP.
+- Server
 
-- Linux
+Mulai dari sisi akses maupun manajemen, sebuah server fisik tunggal dapat menjadi beberapa server yang biasa disebut dengan virtual server atau virtual machine (VM).
 
-  Linux berperan sebagai sistem operasi, tempat dimana kita menginstal dan menjalankan Nginx, MySQL dan PHP. Linux sendiri merupakan sistem operasi yang populer digunakan sebagai server.
+- Dekstop
+
+Mirip dengan virtualisasi server, yaitu memungkinkan pengguna untuk menjalankan beberapa sistem operasi desktop yang berbeda beda (MAC, Windows, Linux, dll) di dalam satu komputer yang sama.
+
+- Storage
+
+Satu tempat penyimpanan fisik dapat terlihat menjadi beberapa driver virtual. Dengan kata lain, dengan menggunakan windows yang terpisah di console manajemen yang umum, administrator IT dapat memperlakukan drive virtual seperti drive fisik.
+
+- Network
+
+Di dalan jaringan, sebuah router fisik dapat mendukung beberapa, alamat IP untuk membuat router virtual. Sama seperti sebuah switch Ethernet fisik dapat mendukung beberapa alamat MAC (media access control) untuk membuat switch virtual. Sebuah hardware fisik dapat dibagi menjadi beberapa router atau switch virtual untuk mengurangi biaya.
+
+## Virual Machine
+
+**Virtual Machine** Virtual machine berjalan pada partisi terisolasi yang ada pada komputer host dengan resources seperti CPU, memori, dan sistem operasi tersendiri. Hal ini memungkinkan pengguna untuk menjalankan berbagai aplikasi pada virtual machine dan menggunakannya seperti biasanya pada perangkat tersebut. Alih-alih komputer fisik, Satu atau lebih virtual machine bisa berjalan pada satu perangkat keras.
+
+### Contoh Virtual Machine :
+
+- Hyper-V
+
+Hyper-V adalah salah satu software virtualisasi yang biasa digunakan pada operasi sistem Windows. Bahkan windows 8, 8.1, dan Windows 10 sudah memiliki fitur ini secara default. Namun tentunya fitur-fitur yang Anda dapatkan dari versi gratis ini sangat terbatas.
+
+![Hyper-V](./img/hyper-v.png)
 
 - Nginx
 
