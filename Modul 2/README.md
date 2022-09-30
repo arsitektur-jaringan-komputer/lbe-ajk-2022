@@ -6,7 +6,6 @@
 - [**Virtual Machine**](#VirtualMachine)
 - [**vagrant**](#vagrant)
 - [**Langkah - langkah**](#langkahlangkah)
-- [**DNS**](#dns-domain-name-service)
 
 ## Virtualisasi
 
