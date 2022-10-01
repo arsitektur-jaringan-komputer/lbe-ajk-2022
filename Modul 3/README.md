@@ -2,21 +2,30 @@
 
 ## Contents
 
-* [**Deploy**](#deploy)
-* [**LEMP**](#lemp)
-* [**Laravel**](#laravel)
-* [**Web Server**](#web-server)
-* [**DNS**](#dns-domain-name-service)
+- [Deploy](#deploy)
+- [LEMP Stack](#lemp-stack)
+- [Laravel](#laravel)
+- [Web Server](#web-server)
+- [DNS (Domain Name Service)](#dns-domain-name-service)
+- [Link Materi Praktik](#link-materi-praktik)
+- [Referensi](#referensi)
 
 ## Deploy
 **Deploy** atau deployment adalah kegiatan yang merupakan untuk mengembangkan aplikasi atau website yang tidak bisa lepas dari kegiatan para programmer. Ada beberapa proses yang harus dikerjakan oleh para programmer hingga akhirnya bisa menciptakan website atau aplikasi sendiri.
 
 Salah satu yang tidak boleh disepelekan adalah saat menyusun kode (coding) untuk dimasukan ke server dan menyetel atau setup server tersebut agar dapat menghasilkan suatu halamaan web atau aplikasi.
 
-![Deployment](img/Deploy-Process.png)
+<p align="center">
+    <img src="img/Deploy-Process.png" alt="Deploy Process">
+</p>
+
 
 ## LEMP Stack
 **LEMP Stack** adalah seperangkat aplikasi yang digunakan secara bersamaan untuk menjalankan web server. LEMP merupakan singkatan (akronim) dari Linux + Nginx + MySQL + PHP.
+
+<p align="center">
+    <img src="img/lemp-740x416.png" alt="LEMP Stack">
+</p>
 
 - Linux
 
@@ -46,19 +55,22 @@ Salah satu yang tidak boleh disepelekan adalah saat menyusun kode (coding) untuk
 
 Protokol HTTP dan HTTPS digunakan web server untuk dapat berkomunikasi dengan klien. Dengan protokol HTTP dan HTTPS, komunikasi antar server dengan klien dapat saling terhubung serta dapat dimengerti dengan mudah.
 
-### Jenis-jenis Web Server
+## Jenis-jenis Web Server
 - Nginx
 - Apache
 - IIS
 - Lighttpd
 
-![Web-schema](img/Web-Scheme.png)
+<p align="center">
+    <img src="img/Web-Scheme.png" alt="Web Server Scheme">
+</p>
 
 ## DNS (Domain Name Service)
 **DNS** adalah sebuah sistem yang mengubah URL website ke dalam bentuk IP Address. Tanpa DNS, Anda harus mengetikkan IP Address secara lengkap ketika ingin mengunjungi sebuah website.
 
-![DNS-Scheme](img/DNS-Scheme.png)
-
+<p align="center">
+    <img src="img/DNS-Scheme.png" alt="DNS Server">
+</p>
 
  - Root-Level Domain merupakan bagian tertinggi dari hirarki DNS. Biasanya ia berwujud tanda titik (.) di bagian paling   belakang sebuah URL.
  - Top-Level Domain adalah ekstensi yang berada di bagian depan root-level domain. contoh pada gambar adalah org.
