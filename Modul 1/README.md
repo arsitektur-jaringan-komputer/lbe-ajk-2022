@@ -218,24 +218,8 @@ Sub-Materi
 ![ls](img/ls.png)
 Parameter yang sering dipakai pada perintah ls adalah `-a`, `-l`, `-t`, `-h`, dan `-r`. Parameter digunakan untuk mengontrol suatu program dari terminal. Parameter bisa digabungkan, dan urutan letak parameter tidak memengaruhi hasil.
 
-##### 3. man
-*manuals*. Digunakan untuk melihat fungsi dan parameter dari suatu comman
-Contoh `man ls` akan menampilkan manual penggunaan command `ls`.
-Untuk keluar dari tampilan manual tersebut kita tinggal menekan tombol `q`. 
-![man](img/manls.png)
-*man pages* atau perintah `man` juga memiliki keunikan dalam *device* **FreeBSD** dan **Linux** karena membagi *man pages* kedalam beberapa bagian seperti dalam tabel dibawah ini.
-![man](img/man-pages.png)
 
-Sebagai contohnya, didalam **Linux** biasanya terdapat file `passwd` dan perintah `passwd`. Jika kita menjalankan perintah
-+ `man passwd` maka perintah `man` akan memberikan *manuals* untuk perintah `passwd`
-![man](img/man-command-passwd.png)
-+ Namun jika menjalankan perintah `man 5 passwd` maka akan memberikan *manuals* untuk file `passwd` 
-![man](img/man-file-passwd.png)
-
-Untuk mengetahui ada berapa bagian *manual* yang tersedia, kita dapat menjakankan perintah `man -k [kata yang dicari]`
-![man](img/man-option-k.png)
-
-##### 4. cd
+##### 3. cd
 *change directory*. Digunakan untuk pindah ke directory lain. Syntax-nya adalah ```cd [namadirectory]```.
 Misalnya kita sedang berada di directory `/home/Penunggu` dan ingin berpindah ke directory `Desktop/`. Maka command yang kita gunakan adalah `cd Desktop/`  
 ![cd](img/cd.png)  
@@ -245,42 +229,42 @@ Contoh lain:
 + `cd ..` untuk pindah ke parent directory dari directory sekarang
 + `cd -` untuk pindah ke working directory sebelumnya 
  
-##### 5. mkdir
+##### 4. mkdir
 *make directory*. Digunakan untuk membuat sebuah directory (folder).
 Syntax-nya adalah ```mkdir [namadirectory]```  
 ![mkdir](img/mkdir.png)
 
-##### 6. cp
+##### 5. cp
 *copy*. Digunakan untuk menyalin (meng-copy) file.
 Syntax-nya adalah ```cp [namafile] [namacopyannya]```  
 ![cp](img/cp.png)
 
-##### 7. mv
+##### 6. mv
 *Move* Digunakan untuk memindahkan suatu file ke directory lain.
 + Untuk memindahkan file, syntax-nya adalah ```mv [namafile] [pathbarunya]```  
 ![mv](img/mv.png)
 + Selain itu `mv` dapat juga digunakan untuk me-rename file, syntax-nya adalah ```mv [namafile] [namabaru]```  
 ![mv](img/mv2.png)
 
-##### 8. cat
+##### 7. cat
 *concatenate*. Digunakan untuk menampilkan isi dari suatu file.  
 ![cat](img/cat.png)
 
-##### 9. rm
+##### 8. rm
 *remove*. Digunakan untuk menghapus suatu file. Syntax-nya adalah ```rm [namafile]```  
 ![rm](img/rm.png)  
 Selain itu rm juga dapat digunakan untuk menghapus directory, yaitu dengan menambahkan parameter `-r`  
 ![rm -r](img/rm_r.png)
 
-##### 10. rmdir
+##### 9. rmdir
 *remove directory*. Digunakan untuk menghapus directory/ folder yang kosong. Syntax-nya adalah ```rmdir [namafolder]```. Jika command ini digunakan pada folder yang masih ada isinya, maka rmdir akan gagal.  
 ![rmdir](img/rmdir.png)
 
-##### 11. echo
+##### 10. echo
 Digunakan untuk menampilkan string yang kita inputkan. Syntax-nya adalah ```echo [string yang diinginkan]```  
 ![echo](img/echo.png)
 
-##### 12. grep
+##### 11. grep
 Digunakan untuk menampilkan setiap baris pada suatu file yang mengandung kata yang dicari.
 Syntax-nya adalah `grep "[katayangdicari]" [namafile]`  
 ![grep](img/grep.png)
