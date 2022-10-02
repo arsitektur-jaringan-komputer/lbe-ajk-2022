@@ -1,13 +1,12 @@
 # Deployment Aplikasi dengan LEMP *Stack*
 Pembahasan pada modul ketiga dari LBE Laboratorium AJK 2022 adalah mengenai *deployment* dari suatu aplikasi. Rincian konten bahasan dari modul ini adalah sebagai berikut.
-<!-- 
-- [Deploy](#deploy)
-- [LEMP Stack](#lemp-stack)
-- [Laravel](#laravel)
-- [Web Server](#web-server)
-- [DNS (Domain Name Service)](#dns-domain-name-service)
-- [Link Materi Praktik](#link-materi-praktik)
-- [Referensi](#referensi) -->
+
+  - [**Pengenalan Konsep *Deploy* Aplikasi**](#pengenalan-konsep-deploy-aplikasi)
+  - [**Mengenal LEMP *Stack* dalam *Deploy* Aplikasi**](#mengenal-lemp-stack-dalam-deploy-aplikasi)
+  - [**LEMP *Stack* vs LAMP *Stack***](#lemp-stack-vs-lamp-stack)
+  - [**Instalasi LEMP Stack**](#instalasi-lemp-stack)
+  - [***Prerequisites* dan Praktik Deploy Aplikasi**](#prerequisites-dan-praktik-deploy-aplikasi)
+  - [**Referensi**](#referensi)
 
 ## **Pengenalan Konsep *Deploy* Aplikasi**
 
@@ -17,7 +16,7 @@ Saat proses *development* aplikasi (baik *web*, *desktop app*, maupun *mobile ap
 
 Dalam proses *deployment* ini, terdapat beberapa *stack* yang dapat digunakan dengan konfigurasi yang berbeda-beda sesuai *stack* yang digunakan tersebut. Salah satu *stack* yang dapat digunakan adalah LEMP *stack*. Apakah itu?
 
-[Gambar 1](./img/Deploy-Process.png)
+![Gambar 1](./img/Deploy-Process.png)
 
 </br>
 
@@ -25,7 +24,7 @@ Dalam proses *deployment* ini, terdapat beberapa *stack* yang dapat digunakan de
 
 Salah satu *stack web server* untuk *deployment* aplikasi adalah LEMP. LEMP adalah singkatan dari Linux, Nginx (baca: engine-ex), MySQL, dan PHP. LEMP menjadi salah satu *stack* yang sangat populer. Komponen yang membentuk LEMP ini bersifat *open-source* dengan dukungan komunitas yang sangat besar. 
 
-[Gambar 2](./img/lemp-740x416.png)
+![Gambar 2](./img/lemp-740x416.png)
 
 Mungkin saat mengulik tentang LEMP *stack*, akan ditemui juga *stack* lain yang merupakan ‘saudara’ dari LEMP *stack*, yaitu LAMP *stack*. Huruf A pada LAMP *stack* adalah Apache. Sehingga, perbedaannya hanyalah pada penggunakan *web server*-nya. Jika menggunakan Apache, maka disebut LAMP *stack*, dan jika menggunakan Nginx maka disebut LEMP *stack*. *Web server* Apache sudah terbilang cukup lama yaitu sejak tahun 1995, sedangkan Nginx baru di tahun 2005. Tapi, seberapa signifikan perbedaa,nya?
 
@@ -40,7 +39,7 @@ Menjawab pertanyaan pada *section* sebelumnya, hal yang menjadi pembeda antara L
 
 *Web server* adalah sebuah *software* yang memberikan layanan berupa data dan berfungsi untuk menerima permintaan HTTP atau HTTPS dari *client* atau kita kenal dengan *web browser* (Chrome, Firefox, atau lainnya). Selanjutnya, *web server* akan mengirimkan respon atas permintaan tersebut kepada *client* dalam bentuk halaman *web*.
 
-[Gambar 3](./img/Web-Scheme.png)
+![Gambar 3](./img/Web-Scheme.png)
 
 Protokol HTTP dan HTTPS digunakan *web server* untuk dapat berkomunikasi dengan *client*. Dengan protokol HTTP dan HTTPS, komunikasi antar *server* dengan *client* dapat saling terhubung serta dapat dimengerti dengan mudah.
 
@@ -50,13 +49,13 @@ Jenis-jenis *web server* yang populer antara lain yaitu Nginx, Apache, IIS, dan 
 
 Sehingga, berikut ditampilkan perbedaan antara keduanya.
 
-| Perbedaan | Nginx | Apache |
+| **Perbedaan** | **Nginx** | **Apache** |
 | --- | --- | --- |
-| Konsep | Based on event (tidak akan memproses suatu pekerjaan meskipun ada request baru — multitasking) | Based on process (membuat proses dan pekerjaan hanya jika ada request) |
-| Performa | Static content serta lebih cepat 2.5 kali dibanding Apache | Dynamic content  |
-| Dukungan OS | Unix system dengan dukungan sedikit pada Microsoft Windows | Unix system dan dukungan penuh Microsoft Windows |
-| Keamanan | Tersedia konfigurasi untuk dapat melakukan limitasi pada jumlah request dan jumlah koneksi pada konfigurasi Nginx | Tersedia konfigurasi untuk menangani DDoS Attack termasuk dengan Mod Evasive, module yang berurusan dengan HTTP DoS, DDoS atau Brute Force Attack |
-| Dukungan Hosting | VPS hosting, dedicated hosting, atau cluster container | Shared hosting |
+| **Konsep** | Based on event (tidak akan memproses suatu pekerjaan meskipun ada request baru — multitasking) | Based on process (membuat proses dan pekerjaan hanya jika ada request) |
+| **Performa** | Static content serta lebih cepat 2.5 kali dibanding Apache | Dynamic content  |
+| **Dukungan** **OS** | Unix system dengan dukungan sedikit pada Microsoft Windows | Unix system dan dukungan penuh Microsoft Windows |
+| **Keamanan** | Tersedia konfigurasi untuk dapat melakukan limitasi pada jumlah request dan jumlah koneksi pada konfigurasi Nginx | Tersedia konfigurasi untuk menangani DDoS Attack termasuk dengan Mod Evasive, module yang berurusan dengan HTTP DoS, DDoS atau Brute Force Attack |
+| **Dukungan** **Hosting** | VPS hosting, dedicated hosting, atau cluster container | Shared hosting |
 
 Sehingga, antara LEMP *stack* dan LAMP *stack* memiliki keunggulan masing-masing. Namun, Nginx memiliki kelebihan sendiri dibandingkan Apache dalam performa dan penggunaan memori yang kecil. Karena bahasan modul ini juga terfokus pada LEMP *stack*, jadi bagaimana cara implementasinya?
 
@@ -112,7 +111,7 @@ Referensi dari *prerequisites* tersebut akan terdapat pada bahasan di modul sela
 
 </br>
 
-## Referensi
+## **Referensi**
 
 [https://www.dicoding.com/blog/apa-itu-web-server-dan-fungsinya/](https://www.dicoding.com/blog/apa-itu-web-server-dan-fungsinya/)
 
