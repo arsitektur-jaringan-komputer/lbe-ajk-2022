@@ -34,16 +34,13 @@ Mungkin saat mengulik tentang LEMP *stack*, akan ditemui juga *stack* lain yang 
 
 Menjawab pertanyaan pada *section* sebelumnya, hal yang menjadi pembeda antara LEMP *stack* dan LAMP *stack* ini hanya terletak pada penggunaan *web server*-nya (Nginx atau Apache). 
 
-<aside>
-💡 **Apa itu Web Server?**
-
-*Web server* adalah sebuah *software* yang memberikan layanan berupa data dan berfungsi untuk menerima permintaan HTTP atau HTTPS dari *client* atau kita kenal dengan *web browser* (Chrome, Firefox, atau lainnya). Selanjutnya, *web server* akan mengirimkan respon atas permintaan tersebut kepada *client* dalam bentuk halaman *web*.
-
-Protokol HTTP dan HTTPS digunakan *web server* untuk dapat berkomunikasi dengan *client*. Dengan protokol HTTP dan HTTPS, komunikasi antar *server* dengan *client* dapat saling terhubung serta dapat dimengerti dengan mudah.
-
-Jenis-jenis *web server* yang populer antara lain yaitu Nginx, Apache, IIS, dan Lighttpd.
-
-</aside>
+>**Apa itu Web Server?**
+>
+>*Web server* adalah sebuah *software* yang memberikan layanan berupa data dan berfungsi untuk menerima permintaan HTTP atau HTTPS dari *client* atau kita kenal dengan *web browser* (Chrome, Firefox, atau lainnya). Selanjutnya, *web server* akan mengirimkan respon atas permintaan tersebut kepada *client* dalam bentuk halaman *web*.
+>
+>Protokol HTTP dan HTTPS digunakan *web server* untuk dapat berkomunikasi dengan *client*. Dengan protokol HTTP dan HTTPS, komunikasi antar *server* dengan *client* dapat saling terhubung serta dapat dimengerti dengan mudah.
+>
+>Jenis-jenis *web server* yang populer antara lain yaitu Nginx, Apache, IIS, dan Lighttpd.
 
 Sehingga, berikut ditampilkan perbedaan antara keduanya.
 
