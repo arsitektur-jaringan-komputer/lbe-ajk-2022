@@ -205,9 +205,8 @@ Sub-Materi
 1. [Basic Command](#1-basic-command)
 2. [Administrative Command](#2-administrative-command)
 3. [File Editing](#3-file-editing)
-4. [Export Variable](#4-export-variable)
-5. [Cek IP dan Koneksi](#5-cek-ip-dan-koneksi)
-6. [Menginstall Software](#6-menginstall-software)
+4. [Cek IP dan Koneksi](#4-cek-ip-dan-koneksi)
+5. [Menginstall Software](#5-menginstall-software)
 
 ### 1. Basic Command
 ##### 1. pwd
@@ -240,21 +239,14 @@ Syntax-nya adalah ```cp [namafile] [namacopyannya]```
 
 ##### 6. mv
 *Move* Digunakan untuk memindahkan suatu file ke directory lain.
-+ Untuk memindahkan file, syntax-nya adalah ```mv [namafile] [pathbarunya]```  
-![mv](img/mv.png)
-+ Selain itu `mv` dapat juga digunakan untuk me-rename file, syntax-nya adalah ```mv [namafile] [namabaru]```  
-![mv](img/mv2.png)
 
 ##### 7. cat
 *concatenate*. Digunakan untuk menampilkan isi dari suatu file.  
 ![cat](img/cat.png)
 
 ##### 8. rm
-*remove*. Digunakan untuk menghapus suatu file. Syntax-nya adalah ```rm [namafile]```  
-![rm](img/rm.png)  
+*remove*. Digunakan untuk menghapus suatu file. Syntax-nya adalah ```rm [namafile]```   
 Selain itu rm juga dapat digunakan untuk menghapus directory, yaitu dengan menambahkan parameter `-r`  
-![rm -r](img/rm_r.png) <br>
-Dalam bash shell juga ada fitur bernama pipeline, dengan pipeline, kita bisa mengirim output dari suatu command ke command lain, misal kita ingin mencari file/folder yang memiliki kata 'data', maka kita bisa mengirim output dari 'ls' ke 'grep'
 
 ##### 9. clear
 Digunakan untuk 'membersihkan' isi layar terminal. <br>
@@ -268,22 +260,7 @@ Syntax-nya adalah `sudo su`
 *superuser do*. Digunakan untuk menjalankan command sebagai superuser, superuser biasanya digunakan untuk meng-edit file konfigurasi, mengatur paket, menginstall program.
 Syntax-nya adalah `sudo [command]`
 
-###### 3. chown
-*change owner*.
-+ Digunakan untuk mengubah kepemilikan dari suatu file. Syntax-nya adalah 
-```chown [namauser] [namafile]```  
-![chown](img/chown.png)  
-+ Selain user pemilik, command `chown` juga bisa digunakan untuk mengganti *group* pemilik. Syntax-nya adalah
-```chown [namauser]:[namagroup] [namafile]```
-![chown-group](img/chown2.png)  
-**Note:** mohon diingat bahwa nama user dan group yang dipilih harus sudah ada di komputer tersebut.
-
-##### 4. adduser
-*adduser*.
-+ Digunakan untuk membuat user baru. Penggunaan perintah ini sangat sederhana, hanya dengan sudo adduser $loginname. Perintah tersebut akan membuat home directory dan user masuk ke default group, lalu sistem akan meminta informasi mengenai user secara rinci.
-+ User baru dapat ditambahkan ke dalam group *sudoers* menggunakan perintah `sudo adduser [nama_user] sudo` 
-
-##### 5. passwd
+##### 3. passwd
 Digunakan untuk meng-*update* password user.  
 ![passwd](img/passwd.png)  
 
@@ -312,25 +289,6 @@ Ketika kita menekan `i` untuk menginsertkan teks, karakter yang kita inputkan ak
 Jika sudah selesai menginputkan teks, tekan `esc` dan vim akan kembali ke mode normal. Dalam mode normal, tekan `h` untuk bergerak ke kiri, `l` untuk ke kanan, `j` untuk bergerak ke atas dan `k` untuk ke bawah.  
 ![vim4](img/vim4.png)
 
-##### Menghapus karakter
-Untuk menghapus sebuah karakter, selain bisa dilakukan pada mode insert dapat pula dilakukan ketika vim dalam *mode normal*. Yaitu dengan mengarahkan tanda kursor pada karakter yang ingin dihapus, dan menekan `x`.
-Contohnya misal ketika kursor diletakkan pada huruf pertama yaitu huruf *i* pada kalimat *ini baris 3 ya* dan `x` ditekan sebanyak 4 kali, maka kalimat pada baris tersebut yang tersisa adalah *baris 3 ya*.  
-![vim5](img/vim5.png)
-
-##### Menghapus baris
-Jika yang ingin dihapus adalah satu baris penuh, maka yang perlu dilakukan pada *mode normal* yaitu memposisikan kursor pada baris yang ingin dihapus, dan ketikkan `dd`. Misalnya kita ingin menghapus baris pertama dimana terdapat kalimat *hehe :)* maka setelah memposisikan kursor pada baris tersebut, ketika kita mengetikkan `dd` maka baris yang tersisa adalah *nyoba nulis* sebagai baris pertama dan *baris 3 ya* sebagai baris ke-2.  
-![vim6](img/vim6.png) 
-
-##### Menggabungkan dua baris
-Untuk menggabungkan dua baris menjadi satu baris atau dengan kata lain menghilangkan spasi diantara 2 baris, maka pada *mode normal* cukup dengan memposisikan kursor pada kalimat di baris pertama dan tekan `J`. Maka kalimat pada baris kedua akan menjadi satu baris dengan kalimat pertama.  
-![vim7](img/vim7.png)
-
-##### Undo dan Redo
-Pada teks editor vim, untuk meng-undo perubahan yang baru saja kita lakukan dilakukan dengan mengetik `u`. Maka pengerjaan yang baru saja kita lakukan akan ter-undo.
-Sedangkan untuk me-redo atau kebalikan dari undo yang baru saja kita lakukan yaitu dengan menekan `Ctrl+R`.
-
-##### Menulis pada line baru
-Pertama posisikan kursor pada sebuah baris. Untuk membuat line baru dibawah baris tersebut, tekan `o` dan otomatis sebuah baris baru akan terbentuk di bawah kalimat tersebut dengan vim sudah berada pada mode insert. Jika baris yang ingin ditambahkan berada diatas baris tempat kursor berada saat ini, maka dilakukan dengan menekan `O`. 
 
 ##### Keluar dari teks editor vim
 1. Keluar ketika dalam mode insert tanpa menyimpan perubahan apa-apa dengan mengetikkan `:q!`
@@ -394,45 +352,8 @@ $ touch [nama-file]
 ```  
 ![touch1](img/touch1.png)
 
-### 4. Export Variable
-Command *export* adalah salah satu command yang merupakan bagian dari shell (BuiltIn bash shell). Command ini cukup mudah digunakan karena syntax nya 'langsung' dan hanya memiliki 3 opsi perintah:
 
-- `-p` : Daftar semua nama yang diekspor dalam shell saat ini
-- `-n` : Hapus nama dari daftar ekspor
-- `-f` : Nama diekspor sebagai fungsi
-
-Secara umum, perintah ekspor menandai *environment variabel* untuk diekspor sehingga proses *child* yang baru bercabang dapat mewarisi semua variabel yang ditandai.
-
-Contoh penggunaan export:
-
-##### Meng-export Proxy
-Untuk melakukan export proxy, misalnya menggunakan proxy ITS, maka syntax pada terminal
-```sh
-$ export http_proxy="http://username%40mhs.if.its.ac.id:password@proxy.its.ac.id:8080"
-```
-##### Men-set vim sebagai text editor
-pada terminal ketikkan command
-```sh
-$ export EDITOR=/usr/bin/vim
-```
-
-Untuk cek hasil export variabel dapat melalui 
-```sh
-$ export -p
-```
-atau
-
-```sh
-$ export | grep EDITOR
-```
-![export1](img/export1.png)
-
-##### Me-remove variable dari export list
-Digunakan option `-n`
-```sh
-$ export -n EDITOR
-```
-### 5. Cek IP dan Koneksi
+### 4. Cek IP dan Koneksi
 
 ##### 1. ifconfig
 Untuk mengkonfigurasi network interface.  
@@ -463,6 +384,7 @@ $ ssh [hostname]
 $ sudo apt update
 ```
 command **apt** dengan opsi **_update_** akan menyinkronisasi ulang file indeks paket dari sumber mereka. indeks-indeks dari paket yang tersedia akan diambil dari lokasi-lokasi yang telah ditentukan di _etc/apt/sources.list_.
+
 ##### 2. apt install pkg
 ```sh
 $ sudo apt install <packages>
