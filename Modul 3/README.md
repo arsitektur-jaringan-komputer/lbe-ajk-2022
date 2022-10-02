@@ -102,7 +102,7 @@ Hal pertama yang harus diperhatikan adalah *prerequisites*, atau hal-hal yang ha
 
 Referensi dari *prerequisites* tersebut akan terdapat pada bahasan di modul selanjutnya, yaitu pada **Praktik Deploy dengan Vagrant** pada tautan di bawah berikut.
 
-[https://github.com/danielcristho/vagrant-deploy-LEMP](https://github.com/danielcristho/deploy-lemp)
+[https://github.com/danielcristho/deploy-lemp](https://github.com/danielcristho/deploy-lemp)
 
 </br>
 
