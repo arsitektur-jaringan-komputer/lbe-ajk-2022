@@ -39,8 +39,6 @@ Menjawab pertanyaan pada *section* sebelumnya, hal yang menjadi pembeda antara L
 
 *Web server* adalah sebuah *software* yang memberikan layanan berupa data dan berfungsi untuk menerima permintaan HTTP atau HTTPS dari *client* atau kita kenal dengan *web browser* (Chrome, Firefox, atau lainnya). Selanjutnya, *web server* akan mengirimkan respon atas permintaan tersebut kepada *client* dalam bentuk halaman *web*.
 
-![Gambar 3](./img/Web-Scheme.png)
-
 Protokol HTTP dan HTTPS digunakan *web server* untuk dapat berkomunikasi dengan *client*. Dengan protokol HTTP dan HTTPS, komunikasi antar *server* dengan *client* dapat saling terhubung serta dapat dimengerti dengan mudah.
 
 Jenis-jenis *web server* yang populer antara lain yaitu Nginx, Apache, IIS, dan Lighttpd.
