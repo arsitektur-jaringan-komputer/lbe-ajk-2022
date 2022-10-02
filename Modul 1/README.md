@@ -131,12 +131,6 @@ Zorin ini merupakan salah satu Distro Linux yang memiliki tampilan grafis sangat
 | Pilihan Sistem Operasi | Linux banyak jenis yang bisa kita pilih baik lokal maupun luar | Macintosh tidak terlalu banyak yang disediakan | Windows tidak banyak varian/jenis yang ditawarkan |
 | Segi Hardware | Ada beberapa hardware yang tidak bekerja atau belum maksimal karena vendor yang tidak menyediakan driver versi Linux | Mac tidak bisa dirakit sendiri karena Apple sudah tidak memberi license buat perusahaan lain untuk membuat hardware yang bisa menggunakan Mac OS | Di Windows, jarang terjadi masalah yang berkaitan dengan hardware, karena banyak vendor yang mensupport Windows |
 
-##### Referensi :
-- http://ayukhusnulkhotimah.web.ugm.ac.id/2018/03/04/perbandingan-linux-mac-os-window/
-- https://www.nesabamedia.com/distro-linux/
-- https://id.wikipedia.org/wiki/Linux
-- https://id.wikipedia.org/wiki/Distribusi_Linux
-
 <div style="page-break-after: always;"></div>
 
 # Konsep
@@ -185,13 +179,6 @@ Sedangkan pada Linux, jika kita ingin meng-copy, paste, atau mengedit file di da
 #### 1.2.2 Absolute Path & Relative path
 Setiap file dan direktori dalam filesystem Linux dapat diakses bila kita mengetahui jalur atau path direktorinya.
 
-**Absolute Path**
-
-Path ditulis dengan lengkap dari nama parent direktori sampai nama filenya. Misal, _/home/Penunggu/aloha.txt_ untuk meng-akses file _aloha.txt_ atau _/home/Penunggu/Downloads/_ untuk mengakses direktori.
-
-**Relative Path**
-
-Path tidak ditulis lengkap, tetapi berdasarkan posisi direktori yang sedang anda akses atau sering disebut direktori kerja (working directory). Misal, saat ini anda berada di direktori _/home/Penunggu_ atau "**~**" Maka cukup dituliskan aloha.txt untuk meng-akses file _aloha.txt_ atau _Downloads/_ untuk mengakses direktori. Nama working directory dapat diganti dengan sebuah tanda "**.**" ( single dot atau titik tunggal), sedangkan parent directory dapat digantikan dengan tanda "**..**" (double dot atau titik ganda).
 ### 2. Repository
 #### 2.1. Apa itu Repository?  
    **Repository** adalah tempat menyimpan berbagai macam program atau aplikasi yang telah di buat sedemikian rupa sehigga bisa di akses melalui internet. Selain di internet, **Repository** juga tersedia di media seperti DVD sebagai alternatif **Repository** saat tak ada koneksi internet. Ketika kita melakukan download Repository melalui internet default servernya adalah server luar, seperti archive.ubuntu.com, security.ubuntu.com, dll. Untuk Fungsinya, disini Repository berperan sebagai penyedia aplikasi atau kumpulan paket software dari distro-distro linux, yang dapat di akses melalui internet.  
@@ -211,24 +198,8 @@ Adanya Repository di linux itu sangatlah _**Penting**_, karena itu adalah tempat
 #### 2.4. Apakah semua Paket software ada di Repository? 
 Tidak semua paket software langsung ada di repository, itu sebabnya kita harus tau nama file repository dan letaknya dimana, karena jika kita akan menginstall suatu software dan aplikasi, kemudian di Repository ternyata paketnya belum ada, kita bisa mencari repositorynya dan menambahkannya di di Repository kita dengan mengedit file sources.list tadi, yang berada di directory sudo gedit /etc/apt/sources.list.
 
-##### Referensi
-- http://2010183ifunsika.blogspot.com/2012/10/analisis-struktur-sistem-linux-dan.html
-- http://www.belkomindo.com/2015/12/apasih-repository-itu.html
-- http://kuntoaji.blogspot.com/2008/08/absolute-path-relative-path.html
-
 <div style="page-break-after: always;"></div>
 
-# cara ssh ke server ajk (untuk mencoba2 CLI) (kalo di windows) (kalo di linux langsung aja)
-1. buka command prompt (windows + R, ketik cmd, enter)
-![image](https://user-images.githubusercontent.com/11045113/131209546-ec30cede-2659-41bc-adcb-68a93f5ada91.png)
-2. copy/ketik ssh lbe@35.197.130.205  ,pencet enter
-![image](https://user-images.githubusercontent.com/11045113/131209591-69009cc6-2fa9-43a2-87f3-7d52d59ca330.png)
-3. masukkan pasword: lbe  ,pencet enter
-
-# Command Line Interface 
-CLI atau Command Line Interface adalah satu dari dua tipe interface komputer, interface lain yaitu GUI (graphical user interface). Saat kalian menggunakan Windows, Mac OS, atau bahkan Android, yang kalian gunakan sebenarnya adalah GUI, di mana user berinteraksi dengan komputer dengan memencet tombol2 yang ada di layar. Sedangkan, dengan CLI, cara utama user untuk berinteraksi adalah dengan keyboard. Dengan CLI, user bisa mengetikkan perintah dalam bentuk teks dan memberikan instruksi pada komputer untuk mengerjakan tugas tertentu. Dua CLI yang sering dipakai adalah CMD dan Shell. Jika anda sering otak-atik Windows anda pasti pernah sekali atau dua kali menggunakan cmd/ command prompt. cmd sendiri adalah CLI default pada Windows, sedangkan CLI yang paling sering digunakan di Linux adalah bash shell. Namun, bash memiliki jauh lebih banyak fungsi daripada cmd, misal, anda bisa mengoperasikan linux (bahkan browsing) hanya melalui bash, sedangkan di windows, hal itu sangat susah dan hampir tidak mungkin. Berikut adalah ilustrasi yang menggambarkan perbedaan kekuatan mereka.
-
-![image](https://user-images.githubusercontent.com/11045113/130975335-53189dbe-668a-4da4-983c-5a45db708959.png)
 
 Sub-Materi
 1. [Basic Command](#1-basic-command)
@@ -242,24 +213,10 @@ Sub-Materi
 ##### 1. pwd
 *print working directory*. Untuk mengetahui di directory mana kita berada sekarang.  
 ![pwd](img/pwd.png)
-
 ##### 2. ls
 *list*. Untuk menampilkan file-file apa saja yang ada di suatu directory.  
-![ls](img/ls.png)  
+![ls](img/ls.png)
 Parameter yang sering dipakai pada perintah ls adalah `-a`, `-l`, `-t`, `-h`, dan `-r`. Parameter digunakan untuk mengontrol suatu program dari terminal. Parameter bisa digabungkan, dan urutan letak parameter tidak memengaruhi hasil.
-- Saat menggunakan parameter `-a` maka semua file akan ditampikan, termasuk yang *hidden* (diawali dengan `.`).  
-![ls -a](img/ls_a.png)
-- Sedangkan parameter `-l` menampilkan file yang tidak *hidden* dalam format *long-list*. Long list sendiri yaitu sebuah mode di mana properti2 file seperti ukuran dan tanggal edit file diperlihatkan.
-![ls -l](img/ls_l.png)
-- Parameter `-t` akan mengurutkan file berdasarkan waktu dieditnya (di screenshot di bawah ini, `-t` digabungkan dengan parameter `-l` agar terlihat tanggal editnya)
-
-![image](https://user-images.githubusercontent.com/11045113/130966408-7a6e5391-f322-4bb8-bb52-7f044a0be78e.png)
-- Parameter `-h` akan menampilkan ukuran file dengan format yang mudah dibaca manusia (human readable). Perbedaan antara `lt` dan `lth` dapat dilihat di bawah
-
-![image](https://user-images.githubusercontent.com/11045113/130967875-b375f366-804d-40d3-874b-1921a38ae272.png)
-- Parameter `-r` akan membalik urutan file, dapat dilihat contoh di bawah
-
-![image](https://user-images.githubusercontent.com/11045113/130968786-b7a3024a-1449-4fd8-8199-d21918cae729.png)
 
 ##### 3. man
 *manuals*. Digunakan untuk melihat fungsi dan parameter dari suatu comman
@@ -332,59 +289,6 @@ Dalam bash shell juga ada fitur bernama pipeline, dengan pipeline, kita bisa men
 
 ![image](https://user-images.githubusercontent.com/11045113/131155462-3f690751-a94f-4878-9a46-df57c605336d.png)
 
-##### 13. zip
-Command ini digunakan untuk melakukan compress data menjadi bentuk zip. Syntax-nya adalah ```zip [namafilezip] [file1] [file2]```.
-Misalnya kita ingin mengompress file **makanan** dan **cemilan** menjadi  **energi.zip** .
-Maka command yang kita jalankan adalah `zip energi makanan cemilan`   
-![zip](img/zip.png)
-
-##### 14. unzip
-Kebalikan dari command zip, unzip digunakan untuk mengekstrak isi dari file .zip
-Syntax-nya adalah ```unzip [namafilezip]```.
-Jadi untuk mengekstrak file foobar.zip kita perlu menjalankan comman `unzip energi.zip`.
-![unzip](img/unzip.png)
-
-##### 15. exit
-Digunakan untuk menutup terminal atau mengakhiri suatu script (misalnya saat melakukan ssh ke komputer lain)
-
-##### 16. clear
-Digunakan untuk 'membersihkan' isi layar terminal.
-Sebelum clear:  
-![clear1](img/sebelumclear.png)  
-Sesudah clear:  
-![clear2](img/sesudahclear.png)
-
-##### 17. tree
-Digunakan untuk menampilkan list directory.
-Untuk menggunakan command ini, user harus meng-*install*-nya terlebih dahulu dengan command
-`sudo apt install tree`  
-![tree](img/tree.png)
-
-##### 18. mount
-Digunakan untuk melakukan mount. Syntax-nya adalah `sudo mount [file/device yang mau di-mount] [directory tempat dia akan di-mount]`
-Contoh: ada suatu file _iso_ yang berisi beberapa file. Untuk dapat mengakses file-file di dalamnya melalui terminal, maka kita harus _mount_ file tersebut ke suatu directory.  
-![mount](img/mount.JPG)  
-
-##### 19. unmount
-Digunakan untuk melakukan _unmount_. Syntax-nya adalah `umount [directory tempat suatu file/device di-mount]`.
-Nama command-nya `umount` yaa bukan _unmount_.  
-![unmount](img/umount.JPG)  
-
-##### 20. dpkg
-Adalah Debian Package Manager. Salah satu kegunaannya adalah untuk meng-install suatu aplikasi yang di-download dari browser.
-Syntax-nya adalah `dpkg -i [path ke file installer aplikasi]`
-Contohnya adalah saat kalian ingin meng-install _google chrome_ maka kalian dapat menggunakan perintah-perintah di bawah ini:
-pertama download dulu installer google chrome yang berekstensi __.deb__
-```sh
-$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb  
-```  
-![wget](img/wget.JPG)  
-
-lalu untuk meng-installnya gunakan command
-```sh
-$ dpkg -i google-chrome-stable_current_amd64.deb
-```  
-![dpkg](img/dpkg2.jpg)  
 
 ### 2. Administrative Command
 ##### 1. su
@@ -414,24 +318,6 @@ Syntax-nya adalah `sudo [command]`
 Digunakan untuk meng-*update* password user.  
 ![passwd](img/passwd.png)  
 
-##### 6. chmod
-*change mode*. Digunakan untuk mengubah izin akses dari suatu dokumen.
-Contoh syntax `chmod 777 [namafile]`
-*777* adalah representasi dari permission yang diberikan. Angka pertama melambangkan permission untuk user, angka kedua untuk group, dan angka ke tiga untuk *Others*  
-![chmod](img/chmod.png)  
-
-Permission Table
-
-|#|Permission|rwx|Binary|
-|---|---|---|---|
-|7|read, write and execute|rwx|111|
-|6|read and write|rw-|110|
-|5|read and execute|r-x|101|
-|4|read only|r--|100|
-|3|write and execute|-wx|011|
-|2|write only|-w-|-1-|
-|1|execute only|--x|001|
-|0|none|---|000|
 
 ### 3. File Editing
 ##### 1. vim
@@ -629,18 +515,4 @@ Semua paket yang dibuthkan oleh paket yang akan diinstall juga akan terunduh dan
 + https://www.tecmint.com/dpkg-command-examples/
 + https://linuxconfig.org/how-to-install-google-chrome-browser-on-ubuntu-16-04-xenial-xerus-linux
 + https://askubuntu.com/questions/219545/dpkg-error-dpkg-status-database-is-locked-by-another-process
-
-<div style="page-break-after: always;"></div>
-
-# Tugas Mandiri
-
-Berikut adalah beberapa latihan yang dapat dilakukan ketika waktu luang untuk menyempurnakan sesi LBE AJK 2021. Tidak wajib dikumpulkan, hanya sebagai latihan saja. Namun, jika ingin mengumpulkan, ss tugas kalian (isi file dan terminalnya), lalu kirim ke pc salah satu admin, nanti akan mendapatkan nilai tambah.
-
-1.a. Buat folder format nrp_nama kalian di folder home di server LBE AJK (kalo belum ditutup), lalu kerjakan tugas2 di bawah ini di sana
-
-1.b. Kalo server udah ditutup, install linux di laptop anda (tutorial ada di atas), lalu kerjakan di sana
-
-2. Menggunakan text editor **vim** untuk menuliskan kesan dan pesan serta kritik dan saran terhadap pelaksanaan LBE AJK 2021 Hari pertama.
-
-3. Membuat dua file (nama file bebas) di folder Downloads menggunakan `touch` lalu, menggunakan `grep` dan `ls` untuk melihat file mana yang namanya ada huruf `a`
 
