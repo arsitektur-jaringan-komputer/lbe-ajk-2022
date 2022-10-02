@@ -215,9 +215,8 @@ Sub-Materi
 ![pwd](img/pwd.png)
 ##### 2. ls
 *list*. Untuk menampilkan file-file apa saja yang ada di suatu directory.  
-![ls](img/ls.png)
+![ls](img/ls.png) <br>
 Parameter yang sering dipakai pada perintah ls adalah `-a`, `-l`, `-t`, `-h`, dan `-r`. Parameter digunakan untuk mengontrol suatu program dari terminal. Parameter bisa digabungkan, dan urutan letak parameter tidak memengaruhi hasil.
-
 
 ##### 3. cd
 *change directory*. Digunakan untuk pindah ke directory lain. Syntax-nya adalah ```cd [namadirectory]```.
@@ -254,25 +253,11 @@ Syntax-nya adalah ```cp [namafile] [namacopyannya]```
 *remove*. Digunakan untuk menghapus suatu file. Syntax-nya adalah ```rm [namafile]```  
 ![rm](img/rm.png)  
 Selain itu rm juga dapat digunakan untuk menghapus directory, yaitu dengan menambahkan parameter `-r`  
-![rm -r](img/rm_r.png)
-
-##### 9. rmdir
-*remove directory*. Digunakan untuk menghapus directory/ folder yang kosong. Syntax-nya adalah ```rmdir [namafolder]```. Jika command ini digunakan pada folder yang masih ada isinya, maka rmdir akan gagal.  
-![rmdir](img/rmdir.png)
-
-##### 10. echo
-Digunakan untuk menampilkan string yang kita inputkan. Syntax-nya adalah ```echo [string yang diinginkan]```  
-![echo](img/echo.png)
-
-##### 11. grep
-Digunakan untuk menampilkan setiap baris pada suatu file yang mengandung kata yang dicari.
-Syntax-nya adalah `grep "[katayangdicari]" [namafile]`  
-![grep](img/grep.png)
-
+![rm -r](img/rm_r.png) <br>
 Dalam bash shell juga ada fitur bernama pipeline, dengan pipeline, kita bisa mengirim output dari suatu command ke command lain, misal kita ingin mencari file/folder yang memiliki kata 'data', maka kita bisa mengirim output dari 'ls' ke 'grep'
 
-![image](https://user-images.githubusercontent.com/11045113/131155462-3f690751-a94f-4878-9a46-df57c605336d.png)
-
+##### 9. clear
+Digunakan untuk 'membersihkan' isi layar terminal. <br>
 
 ### 2. Administrative Command
 ##### 1. su
