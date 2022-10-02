@@ -45,15 +45,21 @@ Di dalan jaringan, sebuah router fisik dapat mendukung beberapa, alamat IP untuk
 
 - Virtual Box
 
-![Virtual-Box](./img/VirtualBox-4.0.jpg)
+![Virtual-Box](./img/Virtualbox.png)
 
 **VirtualBox** adalah software virtualisasi open-source yang mendukung semua sistem operasi sesuai dengan kebutuhan Anda.Karena bersifat open-source, Anda bisa mendapatkan software ini dengan sangat mudah. Anda hanya perlu membuka websitenya dan mendownload secara langsung.
 
 - Qemu
 
-![Qemu](./img/qemu.png)
+![Qemu](./img/xqemu.png.pagespeed.ic.OoqJYBmowG.png)
 
 **Qemu** adalah software virtualisasi yang bisa menjalankan virtual machine pada sistem operasi Linux dan Windows.Berasal dari singkatan Quick Emulator, Qemu bersifat open-source dan bisa digunakan secara gratis. Anda hanya perlu membuka website dan mendownload file untuk memulai.
+
+- VMware
+
+![VMware](./img/VMWare.png)
+
+VMware adalah penyedia perangkat lunak virtualisasi dan komputasi awan yang berbasis di Palo Alto, California. Didirikan pada tahun 1998, VMware adalah anak perusahaan Dell Technologies. EMC Corporation awalnya mengakuisisi VMware pada tahun 2004; EMC kemudian diakuisisi oleh Dell Technologies pada tahun 2016.
 
 ## Vagrant
 
