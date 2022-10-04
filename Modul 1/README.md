@@ -2,7 +2,6 @@
 1. [Pengenalan](#pengenalan)
 2. [Konsep](#konsep)
 3. [CLI](#command-line-interface)
-4. [Tugas Mandiri](#tugas-mandiri)
 
 
 # Pengenalan
@@ -200,7 +199,7 @@ Tidak semua paket software langsung ada di repository, itu sebabnya kita harus t
 
 <div style="page-break-after: always;"></div>
 
-
+#command-line-interface
 Sub-Materi
 1. [Basic Command](#1-basic-command)
 2. [Administrative Command](#2-administrative-command)
