@@ -31,7 +31,7 @@ Ubuntu sendiri memiliki kelebihan dan kekurangan antara lain :
 | KELEBIHAN | KEKURANGAN |
 |:----------|:-----------|
 | Menyediakan OS gratis  | Tampilan menuntut adaptasi |
-| Ramah Pemulas | Aplikasi relatif sedikit apabila dibandingkan dengan sistem operasi lain | 
+| Ramah Pemula | Aplikasi relatif sedikit apabila dibandingkan dengan sistem operasi lain | 
 | Mendukung Banyak Perangkat dengan Baik | Kurang cocok untuk gaming |
 | Memiliki Banyak Jenis Sesuai Kebutuhan |  | 
 <br>
