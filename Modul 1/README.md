@@ -32,9 +32,8 @@ Ubuntu sendiri memiliki kelebihan dan kekurangan antara lain :
 |:----------|:-----------|
 | Menyediakan OS gratis  | Tampilan menuntut adaptasi |
 | Ramah Pemulas | Aplikasi relatif sedikit apabila dibandingkan dengan sistem operasi lain | 
-| Mendukung berbagai Aplikasi  | Kurang cocok untuk gaming |
-| Mendukung Banyak Perangkat dengan Baik |  | 
-| Memiliki Banyak Jenis Sesuai Kebutuhan  |  |
+| Mendukung Banyak Perangkat dengan Baik | Kurang cocok untuk gaming |
+| Memiliki Banyak Jenis Sesuai Kebutuhan |  | 
 <br>
 
 **2. Debian**
@@ -366,15 +365,6 @@ $ ping [host tujuan]
 ```
 ![ping1](img/ping1.png)
 
-##### 3. ssh
-ssh adalah suatu network protokol untuk berkomunikasi secara aman antar komputer. ssh menghubungkan dan masuk (log) ke host yang ditentukan. Command ini dapat meremote server SSH komputer lain untuk menjalankan perintah-perintah dari jarak jauh.
-
-ssh akan menyediakan koneksi terenkripsi yang aman antara dua host melalui jaringan yang tidak aman. Sambungan ini juga dapat digunakan untuk akses terminal, transfer file, dan untuk tunneling aplikasi lain.
-
-Syntax yang biasa digunakan
-```sh
-$ ssh [hostname]
-```
 
 ### 6. Menginstall Software
 
