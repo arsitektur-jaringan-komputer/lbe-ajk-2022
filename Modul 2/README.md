@@ -29,11 +29,11 @@ Satu tempat penyimpanan fisik dapat terlihat menjadi beberapa driver virtual. De
 
 - Network
 
-Di dalan jaringan, sebuah router fisik dapat mendukung beberapa, alamat IP untuk membuat router virtual. Sama seperti sebuah switch Ethernet fisik dapat mendukung beberapa alamat MAC (media access control) untuk membuat switch virtual. Sebuah hardware fisik dapat dibagi menjadi beberapa router atau switch virtual untuk mengurangi biaya.
+Di dalan jaringan, Sama seperti sebuah switch Ethernet fisik dapat mendukung beberapa alamat MAC (media access control) untuk membuat switch virtual. Sebuah hardware fisik dapat dibagi menjadi beberapa router atau switch virtual untuk mengurangi biaya.
 
 ## Virtual Machine
 
-**Virtual Machine** Virtual machine berjalan pada partisi terisolasi yang ada pada komputer host dengan resources seperti CPU, memori, dan sistem operasi tersendiri. Hal ini memungkinkan pengguna untuk menjalankan berbagai aplikasi pada virtual machine dan menggunakannya seperti biasanya pada perangkat tersebut. Alih-alih komputer fisik, Satu atau lebih virtual machine bisa berjalan pada satu perangkat keras.
+**Virtual Machine** berjalan pada partisi terisolasi yang ada pada komputer host dengan resources seperti CPU, memori, dan sistem operasi tersendiri. Hal ini memungkinkan pengguna untuk menjalankan berbagai aplikasi pada virtual machine dan menggunakannya seperti biasanya pada perangkat tersebut. Alih-alih komputer fisik, Satu atau lebih virtual machine bisa berjalan pada satu perangkat keras.
 
 ### Contoh Virtual Machine :
 
@@ -59,13 +59,15 @@ Di dalan jaringan, sebuah router fisik dapat mendukung beberapa, alamat IP untuk
 
 ![VMware](./img/VMWare.png)
 
-VMware adalah penyedia perangkat lunak virtualisasi dan komputasi awan yang berbasis di Palo Alto, California. Didirikan pada tahun 1998, VMware adalah anak perusahaan Dell Technologies. EMC Corporation awalnya mengakuisisi VMware pada tahun 2004; EMC kemudian diakuisisi oleh Dell Technologies pada tahun 2016.
+**VMware** adalah penyedia perangkat lunak virtualisasi dan komputasi awan yang berbasis di Palo Alto, California. Didirikan pada tahun 1998, VMware adalah anak perusahaan Dell Technologies. EMC Corporation awalnya mengakuisisi VMware pada tahun 2004; EMC kemudian diakuisisi oleh Dell Technologies pada tahun 2016.
 
 ## Vagrant
 
 ![Vagrant](./img/vagrant-logo.png)
 
-**Vagrant** adalah produk perangkat lunak open source untuk membangun dan memelihara lingkungan pengembangan perangkat lunak virtual portabel misalnya, untuk VirtualBox, KVM, Hyper-V,Docker Container, VMware, dan AWS. vagrant mencoba menyederhanakan manajemen konfigurasi perangkat lunak virtualisasi untuk meningkatkan produktivitas pengembangan. Vagrant ditulis dalam bahasa Ruby, tetapi ekosistemnya mendukung pengembangan dalam beberapa bahasa lain.
+**Vagrant** adalah open-source software yang digunakan untuk provisioning dan managing virtual machine / instances . Vagrant dibuat untuk otomatisasi provisioning virtual machine dan instances sehingga mengurangi lama waktu setup environment development.
+
+Vagrant menyediakan kemudahan konfigurasi karena dibangun diatas standar teknologi untuk memaksimalkan produktivitas dan fleksibilitas tim development.
 
 ## Praktik Provisioning dengan Vagrant
 
@@ -87,7 +89,7 @@ https://www.virtualbox.org/
 
 - Buka cmd
 
-![Open-cmd](./img/cmd.jpg)
+![Open-cmd](./img/cmd-open.jpg)
 
 - Cek apakah vagrant sudah terinstall dengan cmd
   `vagrant -v`
@@ -98,34 +100,35 @@ https://www.virtualbox.org/
 
 ![find-box](./img/find-box.jpg)
 
-disini kita pilih ubuntu untuk box yang akan kita pakai
-![pilih-box](./img/pilih-ubuntu.jpg)
+- Disini kita pilih ubuntu untuk box yang akan kita pakai adalah `generic/ubuntu2004`
+  ![pilih-box](./img/pilih-box.jpg)
 
-- Inisialisai box yang dipilih pada vagrant melalui cmd `vagrant init ubuntu/trusty64`
+- Inisialisai box yang dipilih pada vagrant melalui cmd `vagrant init generic/ubuntu2004`
 
 ![vagrant-int](./img/vagrant-init.jpg)
 
-- Jalankan box tersebut pada vagrant `vagrant up`
+- Akan terlihat document `vagrantfile` pada direktori
+
+![vagrant-int](./img/vagrant-file.jpg)
+
+- Buka vagrantfile pada vscode dan konfigurasi vagrant melalui vagrantfile
+
+![vagrantfile-config](./img/vagrantfile-config.jpg)
+
+- Jalankan box tersebut pada vagrant dengan perintah `vagrant up`
 
 ![vagrant-up](./img/vagrant-up.jpg)
 
-akan terlihat document pada direktori
+- Akan terlihat virtual machine baru yang otomatis terbuat dan dijalankan
 
-![vagrant-up](./img/vagrant-file.jpg)
-
-dan juga terlihat virtual machine baru yang otomatis terbuat
-
+![vagrant-finish](./img/masuk-linux.jpg)
 ![vagrant-create](./img/virtualbox-create.jpg)
 
-- Cek di cmd virtual machine yang telah dibuat dan cek juga konfigurasinya `vagrant ssh-config`
+- Lalu kita masukkan username dan password sama yaitu vagrant , karena secara default username dan passwordnya adalah vagrant
 
-![vagrant-config](./img/vagrant-config.jpg)
+![vagrant-in](./img/linux-finish.jpg)
 
-- Masuk virtual machine yang telah dibuat melalui SSH di cmd, mengguanakan data data yang telah kita dapat melalui `ssh-config` `ssh <user>@<ip hostname> -p <port> -i <private-key>`
-
-![vagrant-ssh](./img/masuk-linux.jpg)
-
-maka kita telah berhasil masuk ke dalam os linux yang telah kita buat.
+Maka kita telah berhasil masuk ke dalam os linux yang telah kita buat.
 
 ## Referensi
 
