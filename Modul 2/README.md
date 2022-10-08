@@ -65,7 +65,7 @@ Di dalan jaringan, Sama seperti sebuah switch Ethernet fisik dapat mendukung beb
 
 ![Vagrant](./img/vagrant-logo.png)
 
-**Vagrant** adalah open-source software yang digunakan untuk provisioning dan managing virtual machine / instances . Vagrant dibuat untuk otomatisasi provisioning virtual machine dan instances sehingga mengurangi lama waktu setup environment development.
+**Vagrant** adalah open-source software yang digunakan untuk provisioning dan managing virtual machine. Vagrant dibuat untuk otomatisasi provisioning virtual machine dan instances sehingga mengurangi lama waktu setup environment development.
 
 Vagrant menyediakan kemudahan konfigurasi karena dibangun diatas standar teknologi untuk memaksimalkan produktivitas dan fleksibilitas tim development.
 
