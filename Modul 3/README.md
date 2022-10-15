@@ -104,6 +104,10 @@ Referensi dari *prerequisites* tersebut akan terdapat pada bahasan di modul sela
 
 [https://github.com/danielcristho/deploy-lemp](https://github.com/danielcristho/deploy-lemp)
 
+Tidak lupa, sudah disediakan juga *web* Laravel untuk praktik. Silahkan di-*clone*!
+
+[https://gitlab.com/kuuhaku86/web-penugasan-individu](https://gitlab.com/kuuhaku86/web-penugasan-individu)
+
 </br>
 
 ## **Referensi**
